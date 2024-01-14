@@ -1,0 +1,4 @@
+node_modules
+productDB.js
+products.json
+.env
