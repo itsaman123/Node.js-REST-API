@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./routes/products');
 const db=require('./db/connect');
 var dotenv=require('dotenv').config();
-const PORT = process.env.PORT || 3000;
+const PORT= 5000;
 
 app.get('/', (req, res) => {
     res.json({

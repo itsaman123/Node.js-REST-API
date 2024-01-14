@@ -3,7 +3,7 @@ const Product = require('../models/product');
 
 const getAllProducts = async (req, res) => {
   try {
-     const { company, name,featured } = req.query;
+     const { company, name,featured,sort, select } = req.query;
 
     const queryObject = {};
     if (company) {
@@ -19,9 +19,19 @@ const getAllProducts = async (req, res) => {
       queryObject.name = {$regex:name, $options:'i'};
     }
 
-    console.log(queryObject);
-    const mydata = await query1.data(queryObject);
-    res.status(200).json({ Products: mydata });
+    let apiData=Product.find(queryObject);
+    if(sort){
+      let sortFix=sort.replace(","," ");
+      apiData=apiData.sort(sortFix);
+    }
+
+    if(select){
+      let selectFix=select.split(",").join(" ");
+      apiData=apiData.select(selectFix);
+    }
+
+    const mydata=await apiData;
+    res.status(200).json({ mydata });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
@@ -34,9 +44,9 @@ const getAllProducts = async (req, res) => {
 
 
 const getAllProductsTesting = async (req, res) => {
-  const mydata=await query1.data2(req.query);
-  res.status(200).json(mydata)
-  // res.status(200).json({ message: 'I am getAllProductsTesting' });
-};
+  const mydata=await Product.find(req.query).select("name company")
+   res.status(200).json(mydata)
+   
+ };
 
 module.exports = { getAllProducts, getAllProductsTesting };

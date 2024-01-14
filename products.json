@@ -1,0 +1,87 @@
+[
+    {
+      "name": "iPhone",
+      "price": 154,
+      "featured": true,
+      "rating": 4.9,
+      "company": "apple"
+    },
+    {
+      "name": "Samsung Galaxy",
+      "price": 799,
+      "featured": false,
+      "rating": 4.7,
+      "company": "samsung"
+    },
+    {
+      "name": "Dell XPS",
+      "price": 1299,
+      "featured": true,
+      "rating": 4.8,
+      "company": "dell"
+    },
+    {
+      "name": "Mi Note 10",
+      "price": 349,
+      "featured": false,
+      "rating": 4.5,
+      "company": "mi"
+    },
+    {
+      "name": "MacBook Pro",
+      "price": 1999,
+      "featured": true,
+      "rating": 4.9,
+      "company": "apple"
+    },
+    {
+      "name": "Samsung QLED TV",
+      "price": 1499,
+      "featured": true,
+      "rating": 4.8,
+      "company": "samsung"
+    },
+    {
+      "name": "Dell Inspiron",
+      "price": 899,
+      "featured": false,
+      "rating": 4.6,
+      "company": "dell"
+    },
+    {
+      "name": "Mi Wireless Earbuds",
+      "price": 79,
+      "featured": true,
+      "rating": 4.3,
+      "company": "mi"
+    },
+    {
+      "name": "iPad Pro",
+      "price": 799,
+      "featured": true,
+      "rating": 4.7,
+      "company": "apple"
+    },
+    {
+      "name": "Samsung SSD",
+      "price": 129,
+      "featured": false,
+      "rating": 4.5,
+      "company": "samsung"
+    },
+    {
+      "name": "Dell UltraSharp Monitor",
+      "price": 499,
+      "featured": true,
+      "rating": 4.8,
+      "company": "dell"
+    },
+    {
+      "name": "Mi Smartwatch",
+      "price": 199,
+      "featured": false,
+      "rating": 4.4,
+      "company": "mi"
+    }
+   ]
+  
